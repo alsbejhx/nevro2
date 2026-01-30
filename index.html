@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كافيه نيفرو | Nevro Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-brown: #4B2C20;
+            --soft-beige: #F5F5DC;
+            --accent-tan: #D2B48C;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background-color: var(--soft-beige);
+            color: var(--primary-brown);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-call { background-color: var(--primary-brown); color: white; }
+        .btn-maps { background-color: #4285F4; color: white; }
+        .btn-whatsapp { background-color: #25D366; color: white; width: 100%; display: block; text-align: center; }
+
+        /* Menu Section */
+        .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; border-bottom: 2px solid var(--accent-tan); padding-bottom: 10px; }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        .menu-card h3 { margin-top: 0; color: var(--primary-brown); }
+        .price { font-size: 1.5rem; font-weight: bold; color: #8B4513; }
+        .info { font-size: 0.9rem; color: #666; margin: 10px 0; line-height: 1.6; }
+        .calories { background: #f0f0f0; padding: 3px 8px; border-radius: 5px; font-size: 0.8rem; }
+
+        /* Footer */
+        footer { background: var(--primary-brown); color: white; text-align: center; padding: 30px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>نيفرو | Nevro</h1>
+        <p>طعم القهوة الأصيلة وأجواء مميزة تأخذك لعالم آخر</p>
+        <div>
+            <a href="tel:+966538363536" class="btn btn-call">اتصل بنا</a>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-maps">موقعنا على الخرائط</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">قائمة المشروبات والحلويات</h2>
+        <div class="menu-grid">
+            
+            <div class="menu-card">
+                <h3>قهوة أمريكية (Black Coffee)</h3>
+                <p class="price">10 ريال</p>
+                <p class="info">قهوة محضرة من أجود أنواع البن المحمص، غنية بالكافيين ومضادات الأكسدة لتعزيز التركيز.</p>
+                <p><span class="calories">🔥 5 سعرات حرارية</span></p>
+                <a href="https://wa.me/966538363536?text=أريد طلب قهوة أمريكية" class="btn btn-whatsapp">طلب عبر واتساب</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>لاتيه (Latte)</h3>
+                <p class="price">12 ريال</p>
+                <p class="info">مزيج ناعم من الإسبريسو والحليب المبخر، يوفر لك الكالسيوم مع طاقة الصباح.</p>
+                <p><span class="calories">🔥 150 سعرة حرارية</span></p>
+                <a href="https://wa.me/966538363536?text=أريد طلب لاتيه" class="btn btn-whatsapp">طلب عبر واتساب</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>V60 قهوة مختصة</h3>
+                <p class="price">18 ريال</p>
+                <p class="info">قهوة مقطرة بعناية، تبرز إيحاءات الفاكهة والشوكولاتة في البن. خفيفة على المعدة.</p>
+                <p><span class="calories">🔥 2 سعرة حرارية</span></p>
+                <a href="https://wa.me/966538363536?text=أريد طلب V60" class="btn btn-whatsapp">طلب عبر واتساب</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>تشيز كيك نيفرو</h3>
+                <p class="price">15 ريال</p>
+                <p class="info">كعكة الجبن الكريمية الغنية، تمنحك طاقة سريعة ولحظات من السعادة الغامرة.</p>
+                <p><span class="calories">🔥 320 سعرة حرارية</span></p>
+                <a href="https://wa.me/966538363536?text=أريد طلب تشيز كيك" class="btn btn-whatsapp">طلب عبر واتساب</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container" style="text-align: center;">
+        <h2 class="section-title">عن نيفرو</h2>
+        <p>نيفرو هو مكانك المفضل للهدوء، حيث نهتم بأدق تفاصيل كوبك لضمان تجربة لا تُنسى. سواء كنت تبحث عن مكان للعمل أو لقاء الأصدقاء، نحن هنا لنرحب بك.</p>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة لكافيه نيفرو &copy; 2026</p>
+        <p>تواصل معنا: +966 053 836 3536</p>
+    </footer>
+
+</body>
+                     </html>
+                     
